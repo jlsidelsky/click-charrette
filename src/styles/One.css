@@ -1,0 +1,18 @@
+.one {
+  display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+  grid-template-rows: repeat(4, 1fr); /* Create 4 equal rows */
+  gap: 10px; /* Optional: Add space between squares */
+}
+.one-square {
+  background-color: var(--red); /* Color of the squares */
+  width: 100%; /* Each square takes the full width of its grid cell */
+  /* height: 100%; */
+  transition: 0.25s;
+}
+.one-square:hover {
+  border-radius: 100px;
+}
+
+.one:hover {
+}

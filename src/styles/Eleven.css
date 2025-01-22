@@ -1,0 +1,46 @@
+.eleven {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap if necessary */
+  gap: 10px; /* Spacing between items */
+  justify-content: center; /* Center items */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Fill available horizontal space */
+  height: 100%; /* Fill available vertical space */
+}
+
+.eleven-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  aspect-ratio: 1; /* Maintain a square aspect ratio */
+  flex-grow: 1; /* Allow items to grow to fill space */
+  flex-basis: calc(
+    25% - 10px
+  ); /* Adjust size based on available space and gap */
+  max-width: calc(25% - 10px); /* Prevent overflow */
+  box-sizing: border-box; /* Include padding and borders in size calculations */
+}
+
+.eleven-circle {
+  height: 100%;
+  width: 100%;
+  background-color: var(--red);
+  border-radius: 50%; /* Make it a circle */
+  transition: transform 0.3s ease-in-out;
+}
+
+.eleven-container:hover .eleven-circle {
+  animation: shrink-grow 1s ease-in-out infinite; /* Looping animation */
+}
+
+@keyframes shrink-grow {
+  0% {
+    width: 100%; /* Full size */
+  }
+  50% {
+    width: 1px; /* Shrink to 1px width */
+  }
+  100% {
+    width: 100%; /* Grow back to full size */
+  }
+}

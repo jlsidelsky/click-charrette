@@ -1,0 +1,8 @@
+.nineteen > p {
+  cursor: pointer;
+}
+.nineteen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

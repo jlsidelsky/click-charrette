@@ -1,0 +1,21 @@
+.three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.three-square {
+  background-color: transparent; /* Default: Parent squares are transparent */
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  display: grid; /* Ensures child squares are properly spaced */
+  gap: 10px; /* Adds spacing between grid items */
+  width: 100%;
+  height: 100%;
+}
+
+.three-square.filled {
+  background-color: var(--red); /* Child squares are red */
+}

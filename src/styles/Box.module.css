@@ -1,0 +1,7 @@
+.box {
+  border: 1.5px solid var(--red);
+  background-color: var(--bg);
+  height: 238px;
+  padding: 10px;
+  box-sizing: border-box;
+}

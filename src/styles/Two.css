@@ -1,0 +1,49 @@
+.two {
+  display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: repeat(3, 1fr); /* Create 4 equal columns */
+  grid-template-rows: repeat(3, 1fr); /* Create 4 equal rows */
+  gap: 10px; /* Optional: Add space between squares */
+}
+.two-square {
+  /* background-color: var(--red); Color of the squares */
+
+  border-color: var(--red);
+  border-style: solid;
+  padding: 5px;
+  box-sizing: border-box;
+  /* border-width: 1px 0px; */
+  width: 100%; /* Each square takes the full width of its grid cell */
+  /* height: 100%; */
+  /* transition: 0.25s; */
+}
+.two-circle {
+  height: 75%;
+  aspect-ratio: 1;
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  margin: auto, auto;
+  position: relative; /* Center with absolute positioning */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* X shape styles */
+.two-line {
+  position: relative;
+
+  width: 100%;
+  height: 2px;
+  background-color: var(--red);
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+}
+
+.two-line1 {
+  transform: translate(-50%, 100%) rotate(-45deg);
+}
+
+.two-line2 {
+  transform: translate(-50%, 0%) rotate(45deg);
+}

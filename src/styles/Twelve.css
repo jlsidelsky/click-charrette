@@ -1,0 +1,33 @@
+.bouncing-circle {
+  width: 100px;
+  height: 100px;
+  background-color: var(--red);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 35%;
+  right: 50%;
+  animation: none; /* No animation by default */
+}
+
+.bouncing-circle.bouncing {
+  animation: bounce 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+.twelve {
+  position: relative;
+}

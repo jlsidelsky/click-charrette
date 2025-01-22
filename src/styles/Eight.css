@@ -1,0 +1,21 @@
+.eight {
+  display: flex;
+  flex-flow: row;
+  gap: 10px;
+}
+
+.eight-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden; /* Ensure no overflow during animation */
+}
+
+.eight-bar {
+  position: absolute;
+  width: 100%;
+  background-color: var(--red);
+  bottom: 0; /* Anchor at the bottom initially */
+  transform: translateY(0); /* Default position */
+  transition: transform 0.5s ease; /* Smooth animation for position change */
+}

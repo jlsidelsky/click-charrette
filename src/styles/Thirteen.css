@@ -1,0 +1,38 @@
+.thirteen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.thirteen-circle {
+  width: 100px;
+  height: 100px;
+  background-color: var(--red);
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.thirteen-circle:hover {
+  animation: heartbeat 1s infinite; /* Trigger heartbeat animation on hover */
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1); /* Start at normal size */
+  }
+  25% {
+    transform: scale(1.2); /* Enlarge slightly */
+  }
+  50% {
+    transform: scale(1); /* Return to normal size */
+  }
+  75% {
+    transform: scale(1.2); /* Enlarge slightly again */
+  }
+  100% {
+    transform: scale(1); /* Return to normal size */
+  }
+}

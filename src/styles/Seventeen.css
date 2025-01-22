@@ -1,0 +1,11 @@
+.seventeen {
+  display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: repeat(5, 1fr); /* Create 4 equal columns */
+  grid-template-rows: repeat(5, 1fr); /* Create 4 equal rows */
+  gap: 10px;
+  cursor: all-scroll;
+}
+
+.seventeen-square {
+  background-color: var(--red);
+}

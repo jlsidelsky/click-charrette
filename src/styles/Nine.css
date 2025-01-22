@@ -1,0 +1,9 @@
+.nine {
+  display: flex;
+  flex-direction: column;
+}
+.nine-circle {
+  background-color: var(--red);
+  border-radius: 50%;
+  width: 100%;
+}
