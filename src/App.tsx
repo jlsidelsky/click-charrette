@@ -24,6 +24,8 @@ import Nineteen from "./interactions/Nineteen";
 import Twenty from "./interactions/Twenty";
 import Twentyone from "./interactions/Twentyone";
 import Twentytwo from "./interactions/Twentytwo";
+import Twentythree from "./interactions/Twentythree";
+import Twentyfour from "./interactions/Twentyfour";
 function App() {
   // const [count, setCount] = useState(0);
 
@@ -71,13 +73,28 @@ function App() {
 
         <Ten></Ten>
         <Eleven></Eleven>
-        <Thirteen></Thirteen>
+        <Seventeen></Seventeen>
 
         <Twelve></Twelve>
         <Fifteen></Fifteen>
         <Sixteen></Sixteen>
-        <Seventeen></Seventeen>
+        <Twentythree></Twentythree>
+
+        <div
+          style={{
+            height: "492px",
+            gridColumn: "span 3",
+            display: "flex",
+            flexDirection: "column",
+            gap: "16px",
+          }}
+        >
+          <Thirteen></Thirteen>
+
+          <Twentyfour></Twentyfour>
+        </div>
         <Twenty></Twenty>
+
         <Twentytwo></Twentytwo>
       </Grid>
     </>

@@ -6,7 +6,7 @@
 }
 .two-square {
   /* background-color: var(--red); Color of the squares */
-
+  cursor: pointer;
   border-color: var(--red);
   border-style: solid;
   padding: 5px;

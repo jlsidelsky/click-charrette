@@ -1,6 +1,7 @@
 .nine {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 .nine-circle {
   background-color: var(--red);

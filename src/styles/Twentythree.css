@@ -1,0 +1,15 @@
+.twentythree {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.twentythree > div {
+  cursor: pointer;
+  flex-grow: 1;
+  width: 100%;
+  background-color: var(--red);
+  transition: flex-grow 0.5s ease-in-out;
+}
+.twentythree > div:hover {
+  flex-grow: 2;
+}

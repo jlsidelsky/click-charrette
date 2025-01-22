@@ -5,6 +5,7 @@
   background-color: var(--red);
   border-radius: 50%;
   overflow: hidden; /* Ensure the ripple doesn't go outside the circle */
+  cursor: pointer;
 }
 
 .fourteen-circle:hover::after {

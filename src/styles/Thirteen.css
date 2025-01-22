@@ -8,6 +8,7 @@
 }
 
 .thirteen-circle {
+  cursor: pointer;
   width: 100px;
   height: 100px;
   background-color: var(--red);

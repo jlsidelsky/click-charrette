@@ -21,7 +21,7 @@ const BouncingCircle: React.FC = () => {
 
 const Twelve: React.FC = () => {
   return (
-    <Box span={4} className="twelve">
+    <Box span={3} className="twelve">
       <BouncingCircle></BouncingCircle>
     </Box>
   );

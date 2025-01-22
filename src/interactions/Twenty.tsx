@@ -5,7 +5,12 @@ import "../styles/Twenty.css";
 const Twenty: React.FC = () => {
   const [clicked, setClicked] = useState(false);
   return (
-    <Box span={3} className="twenty" onClick={() => setClicked(!clicked)}>
+    <Box
+      span={5}
+      height={2}
+      className="twenty"
+      onClick={() => setClicked(!clicked)}
+    >
       <div
         className={`twenty-container twenty-container-1 ${
           clicked ? "twenty-spin" : "false"
