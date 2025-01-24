@@ -1,0 +1,32 @@
+.thirtyfour {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+.thirtyfour > div {
+  cursor: pointer;
+  background-color: var(--red);
+  border-radius: 50%;
+}
+.thirtyfour-main {
+  width: 50%;
+  height: 50%;
+  transition: width ease-in-out 0.5s, height ease-in-out 0.5s,
+    margin-left 0.5s ease-in-out 0.25s, margin-right 0.5s ease-in-out 0.25s;
+}
+.thirtyfour-lil {
+  height: 0px;
+  width: 0px;
+  transition: width ease-in-out 0.5s, height ease-in-out 0.5s;
+}
+.thirty-four-shrink {
+  width: 35%;
+  height: 35%;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.thirty-four-grow {
+  width: 10%;
+  height: 10%;
+}

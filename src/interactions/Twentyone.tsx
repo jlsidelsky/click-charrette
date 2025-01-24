@@ -6,8 +6,8 @@ const Twentyone: React.FC = () => {
   const [clicked, setClicked] = useState(false);
   const scrollToBottom = () => {
     window.scrollTo({
-      top: document.body.scrollHeight, // Scroll to the bottom of the page
-      behavior: "smooth", // Smooth scrolling effect
+      top: document.body.scrollHeight,
+      behavior: "smooth",
     });
   };
 
@@ -36,8 +36,8 @@ const Twentyone: React.FC = () => {
 
         <path
           id="arrow-line"
-          marker-end="url(#head)"
-          stroke-width="4"
+          markerEnd="url(#head)"
+          strokeWidth="4"
           fill="none"
           stroke="var(--red)"
           d="M60,0 L60,50"

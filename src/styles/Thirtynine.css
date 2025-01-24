@@ -1,0 +1,55 @@
+.thirtynine {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: transparent; /* Make base ripple transparent */
+  transform: translate(-50%, -50%);
+  animation: ripple-fade 1.5s ease-out forwards; /* Controls overall effect */
+}
+
+.ripple::before,
+.ripple::after {
+  content: "";
+  position: absolute;
+  border-radius: 10%;
+  background-color: var(--red);
+  /* border: 2px solid var(--red); */
+  width: 20px;
+  height: 20px;
+  transform: scale(0);
+  animation: ripple-grow 1.5s ease-out forwards; /* Controls growth of circles */
+}
+
+.ripple::after {
+  animation-delay: 0.3s; /* Delayed second ripple */
+}
+
+@keyframes ripple-grow {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0; /* Fades out */
+  }
+}
+
+@keyframes ripple-fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

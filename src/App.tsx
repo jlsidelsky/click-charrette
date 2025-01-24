@@ -26,6 +26,22 @@ import Twentyone from "./interactions/Twentyone";
 import Twentytwo from "./interactions/Twentytwo";
 import Twentythree from "./interactions/Twentythree";
 import Twentyfour from "./interactions/Twentyfour";
+import Twentyfive from "./interactions/Twentyfive";
+import Twentysix from "./interactions/Twentysix";
+import Twentyseven from "./interactions/Twentyseven";
+import Twentyeight from "./interactions/Twentyeight";
+import Twentynine from "./interactions/Twentynine";
+import Thirty from "./interactions/Thirty";
+import Thirtyone from "./interactions/Thirtyone";
+import Thirtytwo from "./interactions/Thirtytwo";
+import Forty from "./interactions/Forty";
+import Thirtythree from "./interactions/Thirtythree";
+import Thirtyfive from "./interactions/Thirtyfive";
+import Thirtynine from "./interactions/Thirtynine";
+import Thirtyeight from "./interactions/Thirtyeight";
+import Thirtyseven from "./interactions/Thirtyseven";
+import Thirtysix from "./interactions/Thirtysix";
+import Thirtyfour from "./interactions/Thirtyfour";
 function App() {
   // const [count, setCount] = useState(0);
 
@@ -75,7 +91,8 @@ function App() {
         <Eleven></Eleven>
         <Seventeen></Seventeen>
 
-        <Twelve></Twelve>
+        <Twentysix></Twentysix>
+
         <Fifteen></Fifteen>
         <Sixteen></Sixteen>
         <Twentythree></Twentythree>
@@ -94,6 +111,65 @@ function App() {
           <Twentyfour></Twentyfour>
         </div>
         <Twenty></Twenty>
+        <div
+          style={{
+            height: "492px",
+            gridColumn: "span 4",
+            display: "flex",
+            flexDirection: "column",
+            gap: "16px",
+          }}
+        >
+          <Twentyseven></Twentyseven>
+          <Twentyfive></Twentyfive>
+        </div>
+        <Thirtyone></Thirtyone>
+
+        <div
+          style={{
+            height: "492px",
+            gridColumn: "span 6",
+            display: "flex",
+            flexDirection: "column",
+            gap: "16px",
+          }}
+        >
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(6, 1fr)",
+              gap: "16px",
+            }}
+          >
+            <Thirtysix></Thirtysix>
+            <Twentyeight></Twentyeight>
+          </div>
+          <Forty></Forty>
+        </div>
+
+        <Twentynine></Twentynine>
+        <Thirtyfive></Thirtyfive>
+
+        <Thirtythree></Thirtythree>
+        <Thirtyfour></Thirtyfour>
+        <Thirtytwo></Thirtytwo>
+
+        <Thirty></Thirty>
+        <div
+          style={{
+            height: "492px",
+            gridColumn: "span 3",
+            display: "flex",
+            flexDirection: "column",
+            gap: "16px",
+          }}
+        >
+          <Twelve></Twelve>
+          <Thirtyeight></Thirtyeight>
+        </div>
+        <Thirtynine></Thirtynine>
+
+        <Thirtyseven></Thirtyseven>
 
         <Twentytwo></Twentytwo>
       </Grid>

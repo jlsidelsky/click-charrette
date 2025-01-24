@@ -1,11 +1,11 @@
 import styles from "./styles/Box.module.css";
 
-interface BoxProps {
+interface BoxProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
   span?: number; // Number of columns to span
   style?: React.CSSProperties; // Inline styles for additional customization
   className?: string; // Additional class names
-  onClick?: React.MouseEventHandler<HTMLDivElement>; // Optional onClick handler
+
   height?: number;
 }
 
@@ -15,11 +15,11 @@ const Box: React.FC<BoxProps> = ({
   style,
   height = 1,
   className,
-  onClick,
+  ...rest
 }) => {
   return (
     <div
-      onClick={onClick} // Pass the onClick handler
+      {...rest}
       className={`${styles.box} ${className || ""}`}
       style={{
         height: `${238 * height + (height - 1) * 16}px`,

@@ -1,7 +1,7 @@
-.seven > p {
+.twentyseven > p {
   cursor: pointer;
 }
-.seven {
+.twentyseven {
   display: flex;
   align-items: center;
   justify-content: center;

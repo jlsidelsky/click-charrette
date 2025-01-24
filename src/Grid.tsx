@@ -1,6 +1,4 @@
 import React from "react";
-// import ClickBox from "./interactions/ClickBox";
-// import HoverBox from "./interactions/HoverBox";
 import styles from "./styles/Grid.module.css";
 
 interface GridProps {

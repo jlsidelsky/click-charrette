@@ -1,0 +1,27 @@
+.forty {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+.forty > div {
+  position: absolute;
+
+  width: 15%;
+  aspect-ratio: 1/1;
+  background-color: var(--red);
+  border-radius: 50%;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+}
+.forty:hover > div {
+  animation: move 0.75s ease-in-out infinite;
+}
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 115%;
+  }
+}

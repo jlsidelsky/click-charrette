@@ -1,0 +1,14 @@
+.twentyeight {
+}
+
+.twentyeight:hover {
+  animation: flash 0.25s ease-in-out infinite;
+}
+@keyframes flash {
+  0% {
+    background-color: var(--bg);
+  }
+  100% {
+    background-color: var(--red);
+  }
+}

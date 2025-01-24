@@ -6,25 +6,11 @@ const num = 6;
 const Nine: React.FC = () => {
   const [circles, setCircles] = useState(num);
 
-  //   const removeCircle = (index: number) => {
-  //     setCircles((prev) =>
-  //       prev.map((circle, i) => (i === index ? false : circle))
-  //     );
-  //   };
-
   return (
     <Box span={6} className="nine">
       {Array.from({ length: num }, (_, index) =>
         circ(index, circles, setCircles)
       )}
-      {/* {circles.map((visible, index) => (
-        <div
-          key={index}
-          style={{height: ${}}}
-          className={`circle ${visible ? "visible" : "hidden"}`}
-          onClick={() => removeCircle(index)}
-        ></div>
-      ))} */}
     </Box>
   );
 };

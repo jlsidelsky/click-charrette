@@ -1,0 +1,20 @@
+.thirtyfive > div {
+  margin: 50px auto auto auto;
+  height: 100px;
+  width: 100px;
+  background-color: var(--red);
+  transform: rotateX(51deg) rotateZ(43deg);
+  transform-style: preserve-3d;
+  border-radius: 0px;
+  transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow,
+    0.4s ease-in-out border-radius;
+
+  &:hover {
+    /* transform: rotateX(51deg) rotateZ(43deg); */
+
+    border-radius: 5px;
+    transform: translate3d(0px, -16px, 0px) rotateX(51deg) rotateZ(43deg);
+    box-shadow: 1px 1px 0 1px var(--red), -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+      54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+  }
+}

@@ -1,0 +1,19 @@
+.thirtytwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.75s;
+}
+.thirtytwo > div {
+  cursor: pointer;
+  height: 25%;
+  width: 25%;
+  transition: background-color cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.75s;
+}
+
+.thirtytwo-red {
+  background-color: var(--red);
+}
+.thirtytwo-bg {
+  background-color: var(--bg);
+}

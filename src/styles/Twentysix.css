@@ -1,0 +1,8 @@
+.twentysix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.twentysix > svg {
+  cursor: pointer;
+}

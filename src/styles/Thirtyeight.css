@@ -1,0 +1,59 @@
+.thirtyeight {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thirtyeight-cube {
+  height: 50%;
+  width: 50%;
+  position: relative;
+
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 0.6s ease;
+}
+
+.thirtyeight-cube:hover {
+  animation: spin 4s linear infinite; /* Add animation on hover */
+}
+.thirtyeight-cube > div {
+  position: absolute;
+  box-sizing: border-box;
+  border: 3px solid var(--red);
+  height: 100px;
+  width: 100px;
+}
+.thirtyeight-front {
+  transform: translateZ(50px);
+}
+
+.thirtyeight-back {
+  transform: rotateY(180deg) translateZ(50px);
+}
+
+.thirtyeight-left {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+.thirtyeight-right {
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+.thirtyeight-top {
+  transform: rotateX(90deg) translateZ(50px);
+}
+
+.thirtyeight-bottom {
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+@keyframes spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
